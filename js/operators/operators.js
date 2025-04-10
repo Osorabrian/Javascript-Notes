@@ -112,9 +112,60 @@ console.log( 0 === false)//false does not convert false
 console.log(null == undefined) //true - null is converted to 0 and undefined converted to NaN
 console.log(null === undefined)//false because they are of different types.
 
+/*
+Logical Operators
+|| - OR
+&& - AND
+! - NOT
+?? - Nullish coalescing
+*/
 
+// || - or logical operator returns true if any of its arguments is true
 
+let name = "Brian"
+let age = 18
 
+if(name == "Brian" || name == "Emma"){
+    console.log(name) // it will execute because one of the arguments in the conditionals is true
+}
+
+if(name == "brian" || name == "emma"){
+    console.log("yes, true") // this statement will not be executed because neither of the conditionals are true
+}
+
+// && - and operatot returns false if any of its arguments is false
+
+if(name === "Brian" && age === 18){
+    console.log("This is true") // this will execute since the conditionals are true
+}
+
+if(name === "Brian" && age === 24){
+    console.log("This is false")// this will not execute since the conditional is falsy
+}
+
+/* ! - not operator. Accepts one operand and returns an inverse value.
+!true = false
+!0 = true
+*/
+
+console.log(!true) // false which is the inverse of true
+console.log(!0) // true because it is the inverse of 0 or false
+
+// !! - double not converts a value to a boolean type.
+console.log(!!"not string") // returns true a non-empty string is a truthy value
+console.log(!!"") // returns true since an empty string is equal as false
+
+// ?? - nullish operator - returns the first argument if its not null/undefined else it returns the second one.
+
+let y = undefined;
+let z = null;
+console.log( y ?? z)// returns null because y is not defined
+
+let p = 23;
+console.log(p ?? y)// returns 23 because p is defined
+
+// you can replace ?? with || operator
+console.log(p || y)
 
 
 

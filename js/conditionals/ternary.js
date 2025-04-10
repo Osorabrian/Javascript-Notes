@@ -12,7 +12,7 @@ console.log(answer)
 //multiple '?' ternary operator
 let age = "ef"
 let message = (age < 18) ? "Hi" :
-              (age < 50) ? "Hello" :
-              (age > 100) ? "Hey" : "Uknown"
+            (age < 50) ? "Hello" :
+            (age > 100) ? "Hey" : "Uknown"
 
 console.log(message)
