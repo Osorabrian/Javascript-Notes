@@ -72,6 +72,18 @@ Allows us to evaluate several expressions, dividing them with a comma.
 Each of them is evaluated but only the result of the last one is returned.
 */
 
+for(a = 1, b = 2, c =a * b; a < 10; a++){
+    console.log("Brian")
+}
+
+//COMPARISON OPERATOR
+/*
+All comparison operators return boolean values.
+> greater than, >= greater than or equals to
+< less than, <= less than or equals to
+== equals to,!= not equal to
+*/
+
 
 
 
