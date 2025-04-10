@@ -84,6 +84,35 @@ All comparison operators return boolean values.
 == equals to,!= not equal to
 */
 
+console.log("BRIAN" == "BRIANS") // return a boolean(False)
+
+// string comparison
+/*
+JavaScript uses "dictionary" or lexigraphical order to compare strings.
+JS compares strings from left to right if one of the characters of a string is greater than the other then comparison comes to an end.
+if one string is longer than the other the longer string becomes the largest
+*/
+
+console.log("brian" == "brial") // false not the same
+console.log("brian" > "brial") // true n is greater than l
+console.log("osora" > "osor") // true osora is longer than osor
+
+/*
+equality operator
+== and != less strict equalioty operator has type conversion
+=== and !== strict operator does not have type conversion
+*/
+
+console.log("2" == 2) // true because it convert the types
+console.log("2" === 2)// false because the value is not the same
+
+console.log( 0 == false) //true converts false to 0
+console.log( 0 === false)//false does not convert false
+
+console.log(null == undefined) //true - null is converted to 0 and undefined converted to NaN
+console.log(null === undefined)//false because they are of different types.
+
+
 
 
 
