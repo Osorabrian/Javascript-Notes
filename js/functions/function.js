@@ -21,3 +21,4 @@ functions are actions. So the name should be a verb, brief, as accurate as possi
 one function should perform one action
 a function should be short and do exactly one thing.
 */
+
